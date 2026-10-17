@@ -1,0 +1,25 @@
+database connect karna fastapi mai 
+postgresSql 
+
+1 install orm 
+pip install sqlalchemy
+
+2 pydantic-setting (.env setting ke liye)
+pip install pydantic_settings
+
+3 env setting
+DATABASE_URL="postgresql://username:password@localhost:5432/database_name"
+
+4 coonection package 
+pip install "psycopg[binary]"
+
+5 migratiob package (mtlb ke ager table mai kuch chnage karna ho to tab ham ye package install karte hai )
+  1 pip install alembic
+  2 alembic init migrations (file create karne ke liye)
+  3 alembic revision --autogenerate -m "add user_id to tasks"
+  4 alembic upgrade head
+
+
+
+
+ 
